@@ -67,24 +67,25 @@ Aby rozpocząć korzystanie z projektu, wykonaj następujące kroki:
 - Administratorzy: Dodawanie i usuwanie administratorów grup.
   
 🔔 **Powiadomienia:**
-- Rodzaje powiadomień:
+1) Rodzaje powiadomień:
 - Polubienia postów.
 - Nowi subskrybenci.
 - Udostępnienia postów.
 - Nowe posty użytkownika.
-- Oznaczenia: Powiadomienia jako "nieprzeczytane" lub "przeczytane".
+
+2) Oznaczenia: Powiadomienia jako "nieprzeczytane" lub "przeczytane".
 
 ### 🗂️ **Struktura bazy danych**
-Users
-
-Dane użytkowników, w tym zaszyfrowane hasła.
-1) **Posts**
+1) **Users**
+ - Dane użytkowników, w tym zaszyfrowane hasła.
+ - 
+2) **Posts**
  - Posty użytkowników z referencjami do autorów i komentarzy.
 
-2) **Notifications**
+3) **Notifications**
  - Powiadomienia z polami "read" i rodzajem powiadomienia.
 
-3) **Communities**
+4) **Communities**
  - Grupy z administratorami i powiązanymi postami.
 
 ### ❗ **Obsługa błędów**
