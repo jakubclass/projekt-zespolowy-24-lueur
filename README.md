@@ -77,16 +77,45 @@ Aby rozpocząć korzystanie z projektu, wykonaj następujące kroki:
 
 ### 🗂️ **Struktura bazy danych**
 1) **Users**
- - Dane użytkowników, w tym zaszyfrowane hasła.
- - 
+ - _id (primary key)
+ - username
+ - fullname
+ - password
+ - email
+ - followers (foreign key)
+ - following (foreign key)
+ - profileImg
+ - coverImg
+ - bio
+ - link
+ - likedPosts(foreign key)
 2) **Posts**
- - Posty użytkowników z referencjami do autorów i komentarzy.
+ - _id (primary key)
+ - likes (foreign key)
+ - comments (foreign ket)
+ - text
+ - user (foreign key)
+ - img
 
 3) **Notifications**
- - Powiadomienia z polami "read" i rodzajem powiadomienia.
+ - _id (primary key)
+ - read 
+ - from (foreign key)
+ - to (foreign key)
+ - type
+ - target (foreign key)
 
 4) **Communities**
- - Grupy z administratorami i powiązanymi postami.
+ - _id (primary key)
+ - location
+ - headqurters
+ - companySize
+ - type
+ - industry
+ - followers (foreign key)
+ - admins (foreign key)
+ - coverImg
+ - profileImg
 
 ### ❗ **Obsługa błędów**
 - Wszystkie błędy są obsługiwane zarówno po stronie frontendowej, jak i backendowej.
