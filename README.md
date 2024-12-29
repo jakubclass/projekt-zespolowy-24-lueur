@@ -177,6 +177,11 @@ Projekt wykorzystuje architekturę RESTful API z poniższymi założeniami:
 - Mechanizm blokowania przycisków uniemożliwia wielokrotne wysyłanie zapytań.
 
   ![Alt text](screenshots/Lueur_1.png)
+  ![Alt text](screenshots/Lueur_2.png)
+  ![Alt text](screenshots/Lueur_3.png)
+  ![Alt text](screenshots/Lueur_4.png)
+  ![Alt text](screenshots/Lueur_5.png)
+  
 
 
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=17521716&assignment_repo_type=AssignmentRepo)
