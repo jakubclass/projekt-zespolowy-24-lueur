@@ -50,19 +50,22 @@ Aby rozpocząć korzystanie z projektu, wykonaj następujące kroki:
    npm run dev
 ```
 
-### 🛠️ ** Funkcjonalności użytkownika**:
+### 🛠️ **Funkcjonalności użytkownika**:
 🧑‍💻 **Profil użytkownika:**
 - Wyświetlanie zdjęcia profilowego, tła, bio, linków i innych informacji.
 - Edytowanie danych użytkownika, w tym zmiana zdjęć profilowych.
 - Informacje o liczbie postów, subskrypcjach i polubieniach.
+  
 📝 **Posty:**
 - Tworzenie: Posty mogą zawierać tekst, zdjęcia lub oba elementy.
 - Interakcje: Możliwość polubienia, komentowania i udostępniania.
 - Zarządzanie: Usuwanie postów przez autorów.
+
 🏘️ **Grupy (Communities):**
 - Przegląd: Wyświetlanie dostępnych grup i ich administratorów.
 - Tworzenie: Możliwość założenia własnej grupy i zarządzania nią.
 - Administratorzy: Dodawanie i usuwanie administratorów grup.
+  
 🔔 **Powiadomienia:**
 - Rodzaje powiadomień:
 - Polubienia postów.
