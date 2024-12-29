@@ -75,6 +75,61 @@ Aby rozpocząć korzystanie z projektu, wykonaj następujące kroki:
 
 2) Oznaczenia: Powiadomienia jako "nieprzeczytane" lub "przeczytane".
 
+---
+
+## 💻 **Technologie użyte w projekcie**
+
+### 🌐 **Backend**
+- **Express.js**  
+  Framework Node.js zapewniający szybkie i elastyczne tworzenie aplikacji webowych. W projekcie wykorzystany do obsługi tras, middleware i budowy API RESTful.  
+
+- **Routing**  
+  Routing został zaimplementowany przy użyciu wbudowanego routera Express.js. Dzięki **middleware** możliwe jest skuteczne zarządzanie trasami i zabezpieczenie endpointów przed nieautoryzowanym dostępem.
+
+- **Cookie-parser**  
+  Użyty do obsługi ciasteczek w celu przechowywania danych sesji użytkownika.  
+
+- **JWT Tokens (JSON Web Tokens)**  
+  Wykorzystywane do bezpiecznej autoryzacji użytkowników. Tokeny są przechowywane w ciasteczkach i pozwalają na zachowanie aktywności sesji przez określony czas.
+
+- **bcrypt**  
+  Użyty do szyfrowania haseł użytkowników przed zapisaniem ich w bazie danych. Zapewnia dodatkową warstwę bezpieczeństwa poprzez implementację funkcji mieszania hasła.  
+
+---
+
+### 🎨 **Frontend**
+- **React**  
+  Framework do budowy interfejsu użytkownika. W projekcie zastosowany z narzędziem **Vite**, co umożliwia szybsze i bardziej wydajne zarządzanie projektem.
+
+- **TanStack React Query**  
+  Służy do zarządzania danymi pochodzącymi z API. Dzięki React Query dane są cache'owane i odświeżane w czasie rzeczywistym, co zwiększa wydajność aplikacji i poprawia wrażenia użytkownika.  
+
+- **Tailwind CSS**  
+  Utility-first framework CSS używany do stylizacji aplikacji frontendowej. Umożliwia szybkie tworzenie responsywnych i nowoczesnych interfejsów użytkownika dzięki gotowym klasom.
+
+---
+
+## ⚙️ **Architektura API**
+Projekt wykorzystuje architekturę RESTful API z poniższymi założeniami:
+- Każdy endpoint jest dobrze udokumentowany i posiada jasno określoną funkcję.
+- Obsługiwane metody:
+  - **GET**: Pobieranie danych z bazy.
+  - **POST**: Tworzenie nowych zasobów (np. użytkownicy, posty).
+  - **DELETE**: Usuwanie zasobów (np. postów, grup).
+  - **PATCH/PUT**: Aktualizacja istniejących danych.
+- Middleware gwarantuje, że tylko zalogowani użytkownicy mogą korzystać z endpointów wymagających autoryzacji.
+
+---
+
+## 🔒 **Bezpieczeństwo**
+- **JWT i cookie-parser** są używane w połączeniu, aby zapewnić bezpieczne zarządzanie sesjami.
+- Hasła są szyfrowane przy użyciu **bcrypt**, co uniemożliwia ich odczytanie w przypadku wycieku danych.
+- Middleware chroni wrażliwe dane, ograniczając dostęp do użytkowników posiadających odpowiednie uprawnienia.
+
+---
+
+
+
 ### 🗂️ **Struktura bazy danych**
 1) **Users**
  - _id (primary key)
